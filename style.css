@@ -1,0 +1,255 @@
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    padding-right: 2rem;
+    color: #000;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.logo h3{
+    font-size: 5rem;
+    padding-left: 2rem;
+}
+button{
+    color: yellow;
+}
+#banner-img{
+    background: url(./img/b1.png);
+    background-size: cover;
+    background-position: center;
+    height: 65vh;
+    border: none;
+}
+
+/* ABOUT US */
+.about h1{
+    color: green;
+    font-weight: 800;
+}
+.left-content {
+    padding-top: 4rem;
+}
+.left-content p{
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+.right-content img{
+    width: 28rem;
+}
+
+.text-center{
+    margin-top: 2rem;
+    margin-right: 1rem;
+}
+
+/* BANNER ADVERTISEMENT 1 */
+
+#banner-ads{
+    background: url(./img/mid1.PNG);
+    background-size: cover;
+    height: 30vh;
+
+}
+
+/* PLANS */
+
+.plans h1{
+    font-weight: 700;
+    color: green;
+}
+
+.plans h2{
+    color: #000;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.rupee{
+    font-size: 5rem;
+    font-weight: 600;
+    margin-top: 1rem;
+
+}
+
+#rupee-symbol{
+    font-size: 3rem;
+    font-weight: 700;
+    position: absolute;
+    transform: translateX(-2rem);
+}
+.plans button{
+  width: 10rem;
+  font-weight: 900;
+}
+
+
+/* slider */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Noto Sans HK', sans-serif;
+  background: #fff;
+}
+.slider {
+  /* margin-bottom: 30px; */
+  position: relative;
+}
+.slider .owl-item.active.center .slider-card {
+  transform: scale(1.15);
+  opacity: 1;
+  }
+.slider-card {
+  background: #fff;
+  padding: 0px 0px;
+  margin: 5px 15px 90px 15px;
+  border-radius: 5px;
+  box-shadow: 0 15px 45px -20px rgb(0 0 0 / 73%);
+  transform: scale(0.9);
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+.slider-card #image-box{
+    width: 10rem;
+   
+}
+.slider-card img {
+  border-radius: 50%;
+  transform: translateX(55%);
+}
+.owl-nav .owl-prev {
+  position: absolute;
+  top: calc(50% - 25px);
+  left: 0;
+  opacity: 1;
+  font-size: 30px !important;
+  z-index: 1;
+}
+.owl-nav .owl-next {
+  position: absolute;
+  top: calc(50% - 25px);
+  right: 0;
+  opacity: 1;
+  font-size: 30px !important;
+  z-index: 1;
+}
+
+
+/* Quick Container */
+#quick-container{
+   transform: translateY(3rem);
+}
+/* FOOTER */
+footer{
+    background-color: #000;
+    color: #fff;
+}
+footer a{
+    color: #fff;
+}
+#footer-row{
+    margin-top: 3rem;
+}
+
+.mobileMenuContainer{
+    display: none;
+    /* background-color: rgb(228, 171, 171); */
+    position: absolute;
+    top: 0;
+    left: 0%;
+    height: 100vh;
+    width: 10rem;
+    padding-top: 5rem;
+   
+    border-radius: 5px;
+    
+}
+.mobileMenuContainer .nav-item{
+    color: #fff;
+   margin-top: 20px;
+   margin-bottom: 10px;
+   background: red;
+   padding: 10px;
+  
+   border-radius: 5px;
+}
+.mobileMenuContainer .nav-list{
+    margin: 1rem;
+    width: 200vw;
+    
+}
+.mobileMenuContainer  .MobileNavItems{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.mobileMenuContainer .nav-item:hover{
+    color: red;
+    width: 100vw;
+    background-color: #fff;
+}
+.hamMenu{
+    position: absolute;
+    left: 7%;
+    top: 9%;
+    display: none;
+}
+.closeMenu{
+    position: absolute;
+    top: 9%;
+    left: 7%;
+    color: #fff;
+}
+/* Mobile Menu CSS Start Here */
+@media only screen and (max-width: 765px){
+    .logo h3{
+        font-size: 2rem;
+        padding-left: .3rem;
+    } 
+  .mobileHide{
+      display: none;
+  }
+  #NavAction{
+      flex-direction: column;
+  }
+  #NavAction button{
+      padding: 5px;
+      margin-top: 5px;
+  }
+  .hamMenu{
+    display: block;
+}
+#banner-img{
+    background: url(./img/b1.png);
+    background-size: contain;
+    width: 100vw;
+    height: 45vh;
+    border: none;
+}
+/* ABOUT US */
+.right-content{
+    display: none;
+}
+footer .row{
+display: flex;
+flex-direction: column;
+text-align: center;
+}
+.footer-items{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-items a{
+    color: red;
+}
+.social-icons{
+    text-align: center;
+    padding-left: 6rem;
+}
+}
+/* Mobile Menu CSS END Here */
